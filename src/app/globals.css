@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+*/
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+*/
+body {
+  background: #ffffff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.style-module_fillIcons__6---A {
+  display: flex !important;
+}
+
+.style-module_emptyIcons__Bg-FZ {
+  display: flex !important;
+}
+
+.my-custom-slider {
+  position: relative;
+  /* width: 90vw; */
+  /* height: auto */
+  display: flex;
+  justify-content: center;
+}
+
+.my-custom-slider .swiper-wrapper {
+  padding: 115px 0px;
+}
+
+.my-custom-slider .swiper-slide {
+  height: 300px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scaleY(0.8);
+}
+
+.my-custom-slider .swiper-slide-active {
+  transform: scaleY(1.3) !important;
+
+  /* This will apply only to active slide */
+}
+
+.my-custom-slider .swiper-button-prev,
+.my-custom-slider .swiper-button-next {
+  /* Custom styling for navigation buttons */
+  color: #333;
+}
+
+.accordian-wrapper h2 button {
+  padding: 12px !important;
+  border: 2px solid #e7e9eb !important;
+  border-radius: 12px;
+}
+
+.custom-tab span {
+  background-color: #05203c !important;
+}
+
+.custom-star span {
+  line-height: 20px !important;
+}
+
+.hotelswiper .swiper-slide {
+  width: 40%;
+
+  .swiper-slide.swiper-slide:nth-child(2n) {
+    width: 40%;
+  }
+
+  .swiper-slide.swiper-slide:nth-child(3n) {
+    width: 20%;
+  }
+}
+
+.custom-marquee {
+  .rfm-initial-child-container {
+    /* justify-content: space-between;
+    width: 100%; */
+  }
+}
+
+.custom-progress .nextui-progress-bar {
+  background-color: #12b76a; /* Replace with your preferred color */
+}
+@media (max-width: 767.98px) {
+  .inlines {
+    display: none;
+  }
+}
